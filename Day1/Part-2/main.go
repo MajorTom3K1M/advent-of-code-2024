@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func distanceCalculator() int {
+func similarityCalculator() int {
 	file, err := os.Open("./Day1/Part-2/input.txt")
 	if err != nil {
 		log.Fatalf("failed to open file: %s", err)
@@ -70,6 +70,6 @@ func distanceCalculator() int {
 }
 
 func main() {
-	sum := distanceCalculator()
+	sum := similarityCalculator()
 	fmt.Println(sum)
 }
